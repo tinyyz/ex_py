@@ -1,11 +1,7 @@
-for():
-c = ()
-n = 0
-clear = ()
-print ("Informe o número que você deseja saber a tabuada: ")
-if (n > 10):
-     print ("Este valor é inválido, escolha outro número.\n")
-enquanto (n > 10) 
-enquanto (c <= 10) 
-print (n, "\t", "x", "\t",c, "\t", "=", "\t", n*c, "\n")
-c = c + 1
+print ("\33[1;35;40mTabuada!\33[m")
+
+numero = int(input("\33[1;37;40mInforme um número: \33[m"))
+i = 0
+while (i < 10):
+    print (numero, "X", i+1, "=", numero * (i+1))
+    i += 1

@@ -1,0 +1,13 @@
+print("\33[1;35;40mFibonacci!\33[m")
+n1=1
+n2=1
+n3=1
+c=3
+fibonacci = int(input("Informe o número: "))
+
+while (c <= fibonacci):
+    n3 = n1 + n2
+    n1 = n2
+    n2 = n3
+    c = c + 1
+print ("Seu valor é: ", n3)
