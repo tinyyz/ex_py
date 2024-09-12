@@ -1,18 +1,19 @@
-print("\33[1;35;40mNúmeros primos!\33[m\n")
+print ("\33[1;35;40mEsse número é primo?\33[m")
 
-n = int(input("Informe um número: "))
+num = int(input("\nInforme um número: "))
 
-divisor=0 
-valor=1
+primo = True
 
-if (n > 0):
-    while (valor <= n):
-        if (n % valor == 0):
-            divisor++
-            valor++
-            if (divisor == 2):
-                print ("O número ", n , " é primo.\n")
-elif: 
-print ("O número ", n , " não é primo.\n" )
-elif:
-print ("O número é negativo ou igual a zero.")
+if num < 2:
+  primo = False
+else:
+  for i in range(1, num):
+    if num % i == 0:
+      primo = False
+    else:
+      primo = True
+
+if primo == True:
+  print("\n\33[1;35;40mO número informado é primo!\33[m")
+else:
+  print("\n\33[1;37;40mO número informado \33[1;31;40mnão\33[m \33[1;37;40mé primo!\33[m")
